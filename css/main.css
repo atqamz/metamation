@@ -744,6 +744,10 @@ video {
   width: 50%;
 }
 
+.w-screen {
+  width: 100vw;
+}
+
 .flex-shrink-0 {
   flex-shrink: 0;
 }
@@ -770,6 +774,10 @@ video {
 
 .justify-start {
   justify-content: flex-start;
+}
+
+.justify-end {
+  justify-content: flex-end;
 }
 
 .justify-center {
