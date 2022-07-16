@@ -639,6 +639,11 @@ video {
   margin-bottom: 1.5rem;
 }
 
+.mx-60 {
+  margin-left: 15rem;
+  margin-right: 15rem;
+}
+
 .mb-12 {
   margin-bottom: 3rem;
 }
@@ -735,6 +740,10 @@ video {
   width: 50%;
 }
 
+.w-2\/4 {
+  width: 50%;
+}
+
 .flex-shrink-0 {
   flex-shrink: 0;
 }
@@ -811,6 +820,12 @@ video {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
   margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-x-24 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(6rem * var(--tw-space-x-reverse));
+  margin-left: calc(6rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .self-end {
@@ -918,6 +933,26 @@ video {
 .px-12 {
   padding-left: 3rem;
   padding-right: 3rem;
+}
+
+.px-60 {
+  padding-left: 15rem;
+  padding-right: 15rem;
+}
+
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.px-16 {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.px-24 {
+  padding-left: 6rem;
+  padding-right: 6rem;
 }
 
 .text-center {
@@ -1051,6 +1086,11 @@ footer {
 }
 
 @media (min-width: 480px) {
+  .sm\:mx-24 {
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
+
   .sm\:w-auto {
     width: auto;
   }
