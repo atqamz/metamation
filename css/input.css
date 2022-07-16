@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+#one {
+  background-image: url("../img/section1_bg.png");
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.75);
+  background-blend-mode: overlay;
+}
+
+#two {
+  background: linear-gradient(
+    180deg,
+    #aa6178 0%,
+    rgba(189, 137, 255, 0.6) 100%
+  );
+}
+
+#three {
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+#four {
+  background: linear-gradient(
+    180deg,
+    rgba(189, 137, 255, 0.6) 0%,
+    #ff5c8d 100%
+  );
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.85);
+}
