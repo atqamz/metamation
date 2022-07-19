@@ -14,7 +14,9 @@
   </head>
   <body class="font-titi" style="background: rgba(0, 0, 0, 0.85)">
     <!-- Navbar and Sidebar -->
-    <header class="relative z-50 flex items-center justify-between">
+    <header
+      class="sticky top-0 z-50 flex items-center justify-between bg-black"
+    >
       <!-- Hamburger Menu -->
       <button
         id="open-btn"
@@ -35,7 +37,7 @@
         <form class="relative w-5/6 lg:w-1/3">
           <img src="img/SearchIcon.png" class="absolute top-2 left-4" alt="" />
           <input
-            class="h-10 w-full rounded-3xl border-0 bg-black bg-opacity-10 p-2 px-6 pl-12 text-white outline-none focus:outline-none"
+            class="h-10 w-full rounded-3xl border-0 bg-white bg-opacity-10 p-2 px-6 pl-12 text-white outline-none focus:outline-none"
             type="text"
             placeholder="Search"
           />
@@ -129,7 +131,7 @@
     </header>
 
     <!-- Popular NFTs -->
-    <section>
+    <section id="popular-nfts" class="mb-12">
       <div class="container mx-auto flex flex-col space-y-6 py-6">
         <!-- Header -->
         <div class="w-full">
@@ -140,7 +142,7 @@
 
         <!-- Cards -->
         <div
-          id="popular-nft"
+          id="popular-nft-cards"
           class="no-scrollbar flex space-x-12 overflow-x-auto"
         >
           <!-- Card 1 -->
@@ -318,8 +320,671 @@
             </div>
           </div>
         </div>
+
+        <!-- NFT Types -->
+        <div
+          id="popular-nft-types"
+          class="no-scrollbar flex space-x-12 overflow-x-auto xl:justify-between xl:space-x-0 xl:overflow-x-hidden"
+        >
+          <!-- Type 1 -->
+          <a
+            href="#"
+            class="flex flex-shrink-0 items-center justify-around space-x-3 rounded-full bg-[#FF89AD99] bg-opacity-60 p-3"
+          >
+            <img
+              src="img/h_section2/all.png"
+              class="rounded-full bg-white p-2"
+              alt=""
+            />
+            <h3 class="font-black text-white">All</h3>
+          </a>
+
+          <!-- Type 2 -->
+          <a
+            href="#"
+            class="flex flex-shrink-0 items-center justify-around space-x-3 rounded-full bg-[#FF89AD99] bg-opacity-60 p-3"
+          >
+            <img
+              src="img/h_section2/abstract.png"
+              class="rounded-full bg-white p-2"
+              alt=""
+            />
+            <h3 class="font-black text-white">Abstract</h3>
+          </a>
+          <!-- Type 3 -->
+          <a
+            href="#"
+            class="flex flex-shrink-0 items-center justify-around space-x-3 rounded-full bg-[#FF89AD99] bg-opacity-60 p-3"
+          >
+            <img
+              src="img/h_section2/avatar.png"
+              class="rounded-full bg-white p-2"
+              alt=""
+            />
+            <h3 class="font-black text-white">Avatar</h3>
+          </a>
+          <!-- Type 4 -->
+          <a
+            href="#"
+            class="flex flex-shrink-0 items-center justify-around space-x-3 rounded-full bg-[#FF89AD99] bg-opacity-60 p-3"
+          >
+            <img
+              src="img/h_section2/collectibles.png"
+              class="rounded-full bg-white p-2"
+              alt=""
+            />
+            <h3 class="font-black text-white">Collectibles</h3>
+          </a>
+          <!-- Type 5 -->
+          <a
+            href="#"
+            class="flex flex-shrink-0 items-center justify-around space-x-3 rounded-full bg-[#FF89AD99] bg-opacity-60 p-3"
+          >
+            <img
+              src="img/h_section2/designart.png"
+              class="rounded-full bg-white p-2"
+              alt=""
+            />
+            <h3 class="font-black text-white">Design Art</h3>
+          </a>
+          <!-- Type 6 -->
+          <a
+            href="#"
+            class="flex flex-shrink-0 items-center justify-around space-x-3 rounded-full bg-[#FF89AD99] bg-opacity-60 p-3"
+          >
+            <img
+              src="img/h_section2/game.png"
+              class="rounded-full bg-white p-2"
+              alt=""
+            />
+            <h3 class="font-black text-white">Games</h3>
+          </a>
+          <!-- Show More -->
+          <a
+            href="#"
+            class="flex flex-shrink-0 items-center justify-around space-x-3 rounded-full p-3"
+          >
+            <h3 class="font-black text-white text-opacity-70">Show More ></h3>
+          </a>
+        </div>
+
+        <!-- NFT Bids -->
+        <div
+          id="popular-nft-bids"
+          class="no-scrollbar flex max-w-full space-x-6 overflow-x-auto"
+        >
+          <!-- Bids 1 -->
+          <div
+            class="flex w-1/2 flex-shrink-0 flex-col items-center justify-between space-y-6 rounded-3xl bg-white bg-opacity-10 p-6 md:w-1/3 lg:w-1/4 xl:w-1/6"
+          >
+            <!-- Image -->
+            <div class="relative">
+              <img src="img/h_section2/1.png" alt="" />
+              <img
+                src="img/h_section1/love.png"
+                class="absolute -bottom-4 -right-4"
+                alt=""
+              />
+            </div>
+
+            <p class="text-center text-white">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut
+              interdum ante. Donec malesuada vehicula.
+            </p>
+
+            <a
+              href="#"
+              class="w-full rounded-3xl border-2 border-white border-opacity-10 py-3 text-center text-white text-opacity-10"
+              >Place Your Bid</a
+            >
+          </div>
+          <!-- Bids 2 -->
+          <div
+            class="flex w-1/2 flex-shrink-0 flex-col items-center justify-between space-y-6 rounded-3xl bg-white bg-opacity-10 p-6 md:w-1/3 lg:w-1/4 xl:w-1/6"
+          >
+            <!-- Image -->
+            <div class="relative">
+              <img src="img/h_section2/1.png" alt="" />
+              <img
+                src="img/h_section1/love.png"
+                class="absolute -bottom-4 -right-4"
+                alt=""
+              />
+            </div>
+
+            <p class="text-center text-white">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut
+              interdum ante. Donec malesuada vehicula.
+            </p>
+
+            <a
+              href="#"
+              class="w-full rounded-3xl border-2 border-white border-opacity-10 py-3 text-center text-white text-opacity-10"
+              >Place Your Bid</a
+            >
+          </div>
+          <!-- Bids 3 -->
+          <div
+            class="flex w-1/2 flex-shrink-0 flex-col items-center justify-between space-y-6 rounded-3xl bg-white bg-opacity-10 p-6 md:w-1/3 lg:w-1/4 xl:w-1/6"
+          >
+            <!-- Image -->
+            <div class="relative">
+              <img src="img/h_section2/1.png" alt="" />
+              <img
+                src="img/h_section1/love.png"
+                class="absolute -bottom-4 -right-4"
+                alt=""
+              />
+            </div>
+
+            <p class="text-center text-white">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut
+              interdum ante. Donec malesuada vehicula.
+            </p>
+
+            <a
+              href="#"
+              class="w-full rounded-3xl border-2 border-white border-opacity-10 py-3 text-center text-white text-opacity-10"
+              >Place Your Bid</a
+            >
+          </div>
+          <!-- Bids 4 -->
+          <div
+            class="flex w-1/2 flex-shrink-0 flex-col items-center justify-between space-y-6 rounded-3xl bg-white bg-opacity-10 p-6 md:w-1/3 lg:w-1/4 xl:w-1/6"
+          >
+            <!-- Image -->
+            <div class="relative">
+              <img src="img/h_section2/1.png" alt="" />
+              <img
+                src="img/h_section1/love.png"
+                class="absolute -bottom-4 -right-4"
+                alt=""
+              />
+            </div>
+
+            <p class="text-center text-white">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut
+              interdum ante. Donec malesuada vehicula.
+            </p>
+
+            <a
+              href="#"
+              class="w-full rounded-3xl border-2 border-white border-opacity-10 py-3 text-center text-white text-opacity-10"
+              >Place Your Bid</a
+            >
+          </div>
+          <!-- Bids 5 -->
+          <div
+            class="flex w-1/2 flex-shrink-0 flex-col items-center justify-between space-y-6 rounded-3xl bg-white bg-opacity-10 p-6 md:w-1/3 lg:w-1/4 xl:w-1/6"
+          >
+            <!-- Image -->
+            <div class="relative">
+              <img src="img/h_section2/1.png" alt="" />
+              <img
+                src="img/h_section1/love.png"
+                class="absolute -bottom-4 -right-4"
+                alt=""
+              />
+            </div>
+
+            <p class="text-center text-white">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut
+              interdum ante. Donec malesuada vehicula.
+            </p>
+
+            <a
+              href="#"
+              class="w-full rounded-3xl border-2 border-white border-opacity-10 py-3 text-center text-white text-opacity-10"
+              >Place Your Bid</a
+            >
+          </div>
+          <!-- Bids 6 -->
+          <div
+            class="flex w-1/2 flex-shrink-0 flex-col items-center justify-between space-y-6 rounded-3xl bg-white bg-opacity-10 p-6 md:w-1/3 lg:w-1/4 xl:w-1/6"
+          >
+            <!-- Image -->
+            <div class="relative">
+              <img src="img/h_section2/1.png" alt="" />
+              <img
+                src="img/h_section1/love.png"
+                class="absolute -bottom-4 -right-4"
+                alt=""
+              />
+            </div>
+
+            <p class="text-center text-white">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut
+              interdum ante. Donec malesuada vehicula.
+            </p>
+
+            <a
+              href="#"
+              class="w-full rounded-3xl border-2 border-white border-opacity-10 py-3 text-center text-white text-opacity-10"
+              >Place Your Bid</a
+            >
+          </div>
+          <!-- Bids 7 -->
+          <div
+            class="flex w-1/2 flex-shrink-0 flex-col items-center justify-between space-y-6 rounded-3xl bg-white bg-opacity-10 p-6 md:w-1/3 lg:w-1/4 xl:w-1/6"
+          >
+            <!-- Image -->
+            <div class="relative">
+              <img src="img/h_section2/1.png" alt="" />
+              <img
+                src="img/h_section1/love.png"
+                class="absolute -bottom-4 -right-4"
+                alt=""
+              />
+            </div>
+
+            <p class="text-center text-white">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut
+              interdum ante. Donec malesuada vehicula.
+            </p>
+
+            <a
+              href="#"
+              class="w-full rounded-3xl border-2 border-white border-opacity-10 py-3 text-center text-white text-opacity-10"
+              >Place Your Bid</a
+            >
+          </div>
+          <!-- Bids 8 -->
+          <div
+            class="flex w-1/2 flex-shrink-0 flex-col items-center justify-between space-y-6 rounded-3xl bg-white bg-opacity-10 p-6 md:w-1/3 lg:w-1/4 xl:w-1/6"
+          >
+            <!-- Image -->
+            <div class="relative">
+              <img src="img/h_section2/1.png" alt="" />
+              <img
+                src="img/h_section1/love.png"
+                class="absolute -bottom-4 -right-4"
+                alt=""
+              />
+            </div>
+
+            <p class="text-center text-white">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut
+              interdum ante. Donec malesuada vehicula.
+            </p>
+
+            <a
+              href="#"
+              class="w-full rounded-3xl border-2 border-white border-opacity-10 py-3 text-center text-white text-opacity-10"
+              >Place Your Bid</a
+            >
+          </div>
+          <!-- Bids 9 -->
+          <div
+            class="flex w-1/2 flex-shrink-0 flex-col items-center justify-between space-y-6 rounded-3xl bg-white bg-opacity-10 p-6 md:w-1/3 lg:w-1/4 xl:w-1/6"
+          >
+            <!-- Image -->
+            <div class="relative">
+              <img src="img/h_section2/1.png" alt="" />
+              <img
+                src="img/h_section1/love.png"
+                class="absolute -bottom-4 -right-4"
+                alt=""
+              />
+            </div>
+
+            <p class="text-center text-white">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut
+              interdum ante. Donec malesuada vehicula.
+            </p>
+
+            <a
+              href="#"
+              class="w-full rounded-3xl border-2 border-white border-opacity-10 py-3 text-center text-white text-opacity-10"
+              >Place Your Bid</a
+            >
+          </div>
+        </div>
       </div>
     </section>
+
+    <!-- Hottest News -->
+    <section id="hottest-news" class="mb-12">
+      <div class="container mx-auto flex flex-col space-y-6 py-6">
+        <!-- Header -->
+        <div class="w-full">
+          <h1 class="text-center text-3xl font-bold text-white md:text-start">
+            Hottest NEWS Today
+          </h1>
+        </div>
+
+        <!-- News Cards -->
+        <div
+          id="hottest-news-cards"
+          class="no-scrollbar flex space-x-12 overflow-x-auto"
+        >
+          <!-- Card 1 -->
+          <div class="relative max-w-full flex-shrink-0">
+            <img src="img/h_section3/1.png" alt="" />
+
+            <!-- Content -->
+            <div class="absolute bottom-0 left-0 z-10 w-full">
+              <h1
+                class="rounded-3xl bg-black bg-opacity-40 p-6 text-center font-bold text-white"
+              >
+                Meta to test metaverse monetisation tools for creators on its
+                Horizon Worlds VR platform
+              </h1>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="relative max-w-full flex-shrink-0">
+            <img src="img/h_section3/2.png" alt="" />
+
+            <!-- Content -->
+            <div class="absolute bottom-0 left-0 z-10 w-full">
+              <h1
+                class="rounded-3xl bg-black bg-opacity-40 p-6 text-center font-bold text-white"
+              >
+                NFT sales have spiked 21,000% in a year. But has the marketplace
+                become a bubble?
+              </h1>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="relative max-w-full flex-shrink-0">
+            <img src="img/h_section3/3.png" alt="" />
+
+            <!-- Content -->
+            <div class="absolute bottom-0 left-0 z-10 w-full">
+              <h1
+                class="rounded-3xl bg-black bg-opacity-40 p-6 text-center font-bold text-white"
+              >
+                Meta to test metaverse monetisation tools for creators on its
+                Horizon Worlds VR platform
+              </h1>
+            </div>
+          </div>
+        </div>
+
+        <!-- See More -->
+        <div class="w-full flex justify-end"><a
+            href="#"
+            class="flex items-center justify-around space-x-3 rounded-full p-3"
+          >
+            <h3 class="font-black text-white text-opacity-70">Show More ></h3>
+          </a></div>
+
+        <!-- News Cards -->
+        <div
+          id="news"
+          class="no-scrollbar flex w-full space-x-6 overflow-x-auto "
+        >
+          <!-- Card 1 -->
+          <div
+            class="flex w-2/4 flex-shrink-0 flex-col items-center justify-center space-y-12 rounded-3xl bg-slate-100 bg-opacity-20 p-6 lg:w-1/3 lg:flex-shrink"
+          >
+            <img
+              src="img/section4_img1.png"
+              class="w-72 lg:w-56 xl:w-96"
+              alt=""
+            />
+            <p class="text-md text-center leading-loose text-white xl:text-xl">
+              The metaverse could add $3 trillion to the global economy within a decade new study suggests.
+            </p>
+            <a
+            href="#"
+            class=" rounded-full border-2 p-3 px-6 w-full text-center font-bold text-white"
+            >View More</a>
+          </div>
+
+          <!-- Card 2 -->
+          <div
+            class="flex w-2/4 flex-shrink-0 flex-col items-center justify-center space-y-12 rounded-3xl bg-slate-100 bg-opacity-20 p-6 lg:w-1/3 lg:flex-shrink"
+          >
+            <img
+              src="img/section4_img2.png"
+              class="w-72 lg:w-56 xl:w-96"
+              alt=""
+            />
+            <p class="text-md text-center leading-loose text-white xl:text-xl">
+              Bored Ape NFT team raises $285 million with metaverse project but clogs Ethereum.
+            </p>
+            <a
+            href="#"
+            class=" rounded-full border-2 p-3 px-6 w-full text-center font-bold text-white"
+            >View More</a>
+          </div>
+
+          <!-- Card 3 -->
+          <div
+            class="flex w-2/4 flex-shrink-0 flex-col items-center justify-center space-y-12 rounded-3xl bg-slate-100 bg-opacity-20 p-6 lg:w-1/3 lg:flex-shrink"
+          >
+            <img
+              src="img/section4_img3.png"
+              class="w-72 lg:w-56 xl:w-96"
+              alt=""
+            />
+            <p class="text-md text-center leading-loose text-white xl:text-xl">
+              Crypto giant Binance tries to woo France by bolstering blockchain
+              and Web3 start-ups.
+            </p>
+            <a
+            href="#"
+            class=" rounded-full border-2 p-3 px-6 w-full text-center font-bold text-white"
+            >View More</a>
+          </div>
+        </div>
+      </div>
+
+      </div>
+    </section>
+
+    <!-- Popular Games -->
+    <section id="popular-games" class="mb-12">
+      <div class="container mx-auto flex flex-col space-y-6 py-6">
+        <!-- Header -->
+        <div class="w-full">
+          <h1 class="text-center text-3xl font-bold text-white md:text-start">
+            Most Popular’s GAMES Today
+          </h1>
+        </div>
+
+        <!-- News Cards -->
+        <div
+          id="popular-games-cards"
+          class="no-scrollbar flex space-x-12 overflow-x-auto"
+        >
+          <!-- Card 1 -->
+          <div class="relative max-w-full flex-shrink-0">
+            <img src="img/h_populargames/1.png" alt="" />
+
+            <!-- Content -->
+            <div class="absolute bottom-0 left-0 z-10 w-full">
+              <h1
+                class="rounded-3xl bg-black bg-opacity-40 p-6 text-center font-bold text-white"
+              >
+                Ethlas is a free to play metaverse that allows players to earn as they play.
+              </h1>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="relative max-w-full flex-shrink-0">
+            <img src="img/h_populargames/2.png" alt="" />
+
+            <!-- Content -->
+            <div class="absolute bottom-0 left-0 z-10 w-full">
+              <h1
+                class="rounded-3xl bg-black bg-opacity-40 p-6 text-center font-bold text-white"
+              >
+                The Sandbox is a community-driven system that allows you to play, develop, own, and manage a virtual piece of land.
+              </h1>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="relative max-w-full flex-shrink-0">
+            <img src="img/h_populargames/1.png" alt="" />
+
+            <!-- Content -->
+            <div class="absolute bottom-0 left-0 z-10 w-full">
+              <h1
+                class="rounded-3xl bg-black bg-opacity-40 p-6 text-center font-bold text-white"
+              >
+                Another cryptocurrency that has lately risen and achieved significant most achievements is the MANA coin. 
+              </h1>
+            </div>
+          </div>
+        </div>
+
+        <!-- See More -->
+        <div class="w-full flex justify-end"><a
+            href="#"
+            class="flex items-center justify-around space-x-3 rounded-full p-3"
+          >
+            <h3 class="font-black text-white text-opacity-70">Show More ></h3>
+          </a></div>
+
+        <!-- News Cards -->
+        <div
+          id="news"
+          class="no-scrollbar flex w-full space-x-6 overflow-x-auto "
+        >
+          <!-- Card 1 -->
+          <div
+            class="flex w-2/4 flex-shrink-0 flex-col items-center justify-center space-y-12 rounded-3xl bg-slate-100 bg-opacity-20 p-6 lg:w-1/3 lg:flex-shrink"
+          >
+            <img
+              src="img/h_populargames/1_1.png"
+              class="w-72 lg:w-56 xl:w-96"
+              alt=""
+            />
+            <p class="text-md text-center leading-loose text-white xl:text-xl">
+              Metaverse startup to keep an eye on in 2022 is UFO Gaming. It’s a whole Metaverse ecosystem, with each planet representing a different game. 
+            </p>
+            <a
+            href="#"
+            class=" rounded-full border-2 p-3 px-6 w-full text-center font-bold text-white"
+            >View More</a>
+          </div>
+
+          <!-- Card 2 -->
+          <div
+            class="flex w-2/4 flex-shrink-0 flex-col items-center justify-center space-y-12 rounded-3xl bg-slate-100 bg-opacity-20 p-6 lg:w-1/3 lg:flex-shrink"
+          >
+            <img
+              src="img/h_populargames/1_2.png"
+              class="w-72 lg:w-56 xl:w-96"
+              alt=""
+            />
+            <p class="text-md text-center leading-loose text-white xl:text-xl">
+              Vulcan Forged, a collection of games, is also part of the Metaverse. The games that are now accessible are Vulcan Verse, Berserk, Forge Arena, and Blockbabies.
+            </p>
+            <a
+            href="#"
+            class=" rounded-full border-2 p-3 px-6 w-full text-center font-bold text-white"
+            >View More</a>
+          </div>
+
+          <!-- Card 3 -->
+          <div
+            class="flex w-2/4 flex-shrink-0 flex-col items-center justify-center space-y-12 rounded-3xl bg-slate-100 bg-opacity-20 p-6 lg:w-1/3 lg:flex-shrink"
+          >
+            <img
+              src="img/h_populargames/1_3.png"
+              class="w-72 lg:w-56 xl:w-96"
+              alt=""
+            />
+            <p class="text-md text-center leading-loose text-white xl:text-xl">
+              
+              Mobox is technically free in which you may win rewards just by playing.
+            </p>
+            <a
+            href="#"
+            class=" rounded-full border-2 p-3 px-6 w-full text-center font-bold text-white"
+            >View More</a>
+          </div>
+        </div>
+      </div>
+
+      </div>
+
+    </section>
+
+    <footer class="py-6">
+      <div class="container mx-auto flex flex-col lg:flex-row">
+        <!-- Left  -->
+        <div
+          class="container flex flex-col items-center justify-center space-y-6 lg:w-1/2 lg:items-start lg:px-12"
+        >
+          <h3 class="text-sm font-black text-white">Stay in the loop</h3>
+          <p class="text-xs text-white">
+            Join our mailing list to stay in the loop with our newest feature
+            releases, NFT drops, and tips and tricks for navigating Metamation.
+          </p>
+
+          <form class="flex w-full flex-col items-center space-y-3">
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter your email"
+              class="w-full rounded-2xl border-2 border-gray-300 p-3 focus:outline-none"
+            />
+            <button
+              type="submit"
+              class="w-full rounded-full border-2 p-1 px-3 text-center font-bold text-white"
+            >
+              Subscribe
+            </button>
+          </form>
+
+          <div class="flex w-full flex-col space-y-6">
+            <h3 class="text-sm font-black text-white">Metamation</h3>
+            <div class="flex flex-row space-x-6">
+              <img src="img/Logo.png" class="h-16 w-16" alt="" />
+              <p class="text-sm text-white">
+                The world’s first and largest digital marketplace for crypto
+                collectibles and non-fungible tokens (NFTs). Buy, sell, and
+                discover exclusive digital items.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right -->
+        <div class="hidden w-1/2 flex-row justify-end space-x-6 px-12 lg:flex">
+          <div class="flex flex-col space-y-3 text-sm text-white">
+            <h3 class="mb-3 text-lg font-black">Marketplace</h3>
+            <a href="#">All</a>
+            <a href="#">Abstract</a>
+            <a href="#">Avatar</a>
+            <a href="#">Collectibles</a>
+            <a href="#">Design Art</a>
+            <a href="#">Games</a>
+            <a href="#">Money</a>
+            <a href="#">Sports</a>
+          </div>
+
+          <div class="flex flex-col space-y-3 text-sm text-white">
+            <h3 class="mb-3 text-lg font-black">My Account</h3>
+            <a href="#">Profile</a>
+            <a href="#">Favorites</a>
+            <a href="#">Watchlist</a>
+            <a href="#">My Collections</a>
+            <a href="#">Settings</a>
+          </div>
+
+          <div class="flex flex-col space-y-3 text-sm text-white">
+            <h3 class="mb-3 text-lg font-black">Company</h3>
+            <a href="#">About</a>
+            <a href="#">Careers</a>
+            <a href="#">Ventures</a>
+            <a href="#">Grants</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="container mx-auto mt-6 border-t-2">
+        <p class="mt-3 text-center text-white">
+          Copyright ©2022 <a href="#" class="text-[#FF5C8D]">Metamation</a>. All
+          rights reserved.
+        </p>
+      </div>
+    </footer>
 
     <script src="js/homepage_navbar.js"></script>
     <script src="js/homepage_content.js"></script>
