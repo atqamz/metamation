@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/main.css" />
+
+    <!-- Icon Header -->
+    <link rel="icon" href="img/Logo.png" type="image/x-icon" />
+
+    <title>Metamation</title>
+  </head>
+  <body
+    class="font-titi"
+    style="
+      background-color: rgba(0, 0, 0, 0.85);
+      background-image: url('img/bg/1.png');
+    "
+  >
+    <!-- Navbar and Sidebar -->
+    <header
+      class="sticky top-0 z-50 flex items-center justify-between bg-black"
+    >
+      <!-- Hamburger Menu -->
+      <button
+        id="open-btn"
+        class="ml-3 flex h-8 w-8 items-center justify-center focus:outline-none"
+      >
+        <img src="img/HamburgerMenu.png" class="w-1.5" alt="" />
+      </button>
+
+      <nav
+        class="sticky top-0 mx-auto flex items-center justify-around p-2 sm:container"
+      >
+        <!-- Logo -->
+        <a href="index.html" id="navbar-logo" class="flex h-8 w-8 items-center">
+          <img src="img/Logo.png" class="w-full" alt="" />
+        </a>
+
+        <!-- Search Input -->
+        <form class="relative w-5/6 lg:w-1/3">
+          <img src="img/SearchIcon.png" class="absolute top-2 left-4" alt="" />
+          <input
+            class="h-10 w-full rounded-3xl border-0 bg-white bg-opacity-10 p-2 px-6 pl-12 text-white outline-none focus:outline-none"
+            type="text"
+            placeholder="Search"
+          />
+        </form>
+
+        <!-- Widgets -->
+        <div class="hidden items-center space-x-3 lg:flex">
+          <a
+            href="#"
+            class="flex h-12 w-12 items-center justify-center rounded-full bg-white bg-opacity-10 p-3 text-white"
+          >
+            <img src="img/notifications.png" class="w-full" alt=""
+          /></a>
+          <a
+            href="#"
+            class="flex h-12 w-12 items-center justify-center rounded-full bg-white bg-opacity-10 p-3 text-white"
+            ><img src="img/chats.png" class="w-full" alt=""
+          /></a>
+          <a
+            href="#"
+            class="flex h-12 w-12 items-center justify-center rounded-full bg-white bg-opacity-10 p-3 text-white"
+            ><img src="img/settings.png" class="w-full" alt=""
+          /></a>
+        </div>
+
+        <!-- Auth Button -->
+        <div class="hidden items-center space-x-6 lg:flex">
+          <a
+            href="#"
+            class="rounded-2xl bg-white bg-opacity-50 py-3 px-6 text-sm font-black text-white"
+            >SIGN IN</a
+          >
+          <a
+            href="#"
+            class="rounded-2xl bg-pink-600 py-3 px-6 text-sm font-black text-white"
+            >SIGN UP</a
+          >
+        </div>
+      </nav>
+
+      <!-- Sidebar -->
+      <div
+        id="menu"
+        class="absolute top-0 left-0 hidden h-screen flex-col items-center justify-between rounded-2xl bg-[#7F7F7F] p-3.5"
+      >
+        <!-- Close Sidebar -->
+        <button
+          id="close-btn"
+          class="flex h-8 w-8 items-center justify-center focus:outline-none"
+        >
+          <img src="img/Logo.png" class="w-full" alt="" />
+        </button>
+
+        <!-- Widgets -->
+        <div class="flex flex-col items-center justify-center space-y-3">
+          <a
+            href="homepage.html"
+            class="flex h-10 w-10 items-center justify-center rounded-xl bg-white bg-opacity-10 text-white"
+          >
+            <img src="img/sidebar_home.png" class="w-6" alt=""
+          /></a>
+          <a
+            href="news.html"
+            class="flex h-10 w-10 items-center justify-center rounded-xl bg-[#FF5C8D] text-white"
+            ><img src="img/sidebar_news.png" class="w-6" alt=""
+          /></a>
+          <a
+            href="#"
+            class="flex h-10 w-10 items-center justify-center rounded-xl bg-white bg-opacity-10 text-white"
+            ><img src="img/sidebar_games.png" class="w-6" alt=""
+          /></a>
+          <a
+            href="#"
+            class="flex h-10 w-10 items-center justify-center rounded-xl bg-white bg-opacity-10 text-white"
+            ><img src="img/sidebar_likes.png" class="w-6" alt=""
+          /></a>
+          <a
+            href="#"
+            class="flex h-10 w-10 items-center justify-center rounded-xl bg-white bg-opacity-10 text-white"
+            ><img src="img/sidebar_history.png" class="w-6" alt=""
+          /></a>
+        </div>
+
+        <!-- Sign Out -->
+        <a
+          href="#"
+          class="flex h-10 w-10 items-center justify-center rounded-xl bg-white bg-opacity-10 text-white"
+          ><img src="img/sidebar_signout.png" class="w-6" alt=""
+        /></a>
+      </div>
+    </header>
+
+    <!-- Headline News -->
+    <section id="headline-news">
+      <div class="container mx-auto flex flex-col pt-6 md:space-y-6">
+        <!-- Header -->
+        <div class="w-full">
+          <h1 class="text-center text-3xl font-bold text-white md:text-start">
+            Headline News Todays
+          </h1>
+        </div>
+
+        <div
+          class="flex flex-col items-center space-y-6 md:flex-row md:space-y-0 md:space-x-6"
+        >
+          <div class="relative hidden w-1/2 md:block">
+            <img src="img/news/1.png" alt="" />
+            <div
+              class="absolute top-0 left-0 flex h-full w-full items-end rounded-2xl bg-black bg-opacity-50"
+            >
+              <p class="p-6 text-center text-xl text-white">
+                Metaverse could be worth $3 trilion to global GDP in 10 years -
+                study.
+              </p>
+            </div>
+          </div>
+          <div class="w-full space-y-3 md:w-1/2">
+            <!-- News 1 -->
+            <a
+              href="#"
+              class="flex items-center justify-between space-x-3 rounded-3xl bg-white bg-opacity-10 p-3 md:hidden"
+            >
+              <img
+                src="img/news/1.png"
+                class="h-24 w-24 rounded-2xl object-cover"
+                alt=""
+              />
+              <p class="text-sm text-white">
+                Metaverse could be worth $3 trilion to global GDP in 10 years -
+                study.
+              </p>
+            </a>
+            <!-- News 2 -->
+            <a
+              href="#"
+              class="flex items-center space-x-3 rounded-3xl bg-white bg-opacity-10 p-3"
+            >
+              <img
+                src="img/news/2.png"
+                class="h-24 w-24 rounded-2xl object-cover"
+                alt=""
+              />
+              <p class="text-sm text-white">
+                You can now do your banking in the metaverse with crypto and
+                NFT’s.
+              </p>
+            </a>
+            <!-- News 3 -->
+            <a
+              href="#"
+              class="flex items-center space-x-3 rounded-3xl bg-white bg-opacity-10 p-3"
+            >
+              <img
+                src="img/news/3.png"
+                class="h-24 w-24 rounded-2xl object-cover"
+                alt=""
+              />
+              <p class="text-sm text-white">
+                You may soon be able to order your McDonald’s in the metaverse.
+              </p>
+            </a>
+            <!-- News 4 -->
+            <a
+              href="#"
+              class="flex items-center space-x-3 rounded-3xl bg-white bg-opacity-10 p-3"
+            >
+              <img
+                src="img/news/4.png"
+                class="h-24 w-24 rounded-2xl object-cover"
+                alt=""
+              />
+              <p class="text-sm text-white">
+                Binance tries to woo France by Building Web3 and blockchain
+                start- ups.
+              </p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="other-news">
+      <div class="container mx-auto flex flex-col space-y-6 py-6">
+        <!-- Header -->
+        <div class="flex w-full items-center justify-between">
+          <h1 class="text-center text-3xl font-bold text-white md:text-start">
+            More About Metaverse
+          </h1>
+
+          <!-- Show More -->
+          <a
+            href="#"
+            class="flex items-center justify-around space-x-3 rounded-full p-3"
+          >
+            <h3 class="font-black text-white text-opacity-70">Show More ></h3>
+          </a>
+        </div>
+
+        <div
+          class="flex flex-col items-center justify-between space-y-3 md:space-y-6"
+        >
+          <!-- More News 2 -->
+          <a
+            href="#"
+            class="relative flex w-full items-center rounded-3xl bg-white bg-opacity-10 md:space-x-3 md:p-3"
+          >
+            <img
+              src="img/news/1_2.png"
+              class="absolute -z-10 h-full w-full rounded-3xl object-cover md:static md:w-1/3"
+              alt=""
+            />
+            <div
+              class="flex flex-col space-y-6 rounded-2xl bg-black bg-opacity-80 p-6 md:bg-transparent xl:pr-64"
+            >
+              <h1 class="text-2xl font-bold text-white">Lorem, ipsum.</h1>
+              <p class="text-sm text-white">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aspernatur inventore, est dicta beatae, incidunt a voluptas
+                consequuntur commodi, rem aut natus! Deleniti pariatur sint
+                dolorem eum numquam, ad expedita eius vero similique cupiditate
+                molestias tempore modi perferendis consequatur aut voluptatem.
+              </p>
+            </div>
+          </a>
+          <!-- More News 3 -->
+          <a
+            href="#"
+            class="relative flex w-full items-center rounded-3xl bg-white bg-opacity-10 md:space-x-3 md:p-3"
+          >
+            <img
+              src="img/news/1_3.png"
+              class="absolute -z-10 h-full w-full rounded-3xl object-cover md:static md:w-1/3"
+              alt=""
+            />
+            <div
+              class="flex flex-col space-y-6 rounded-2xl bg-black bg-opacity-80 p-6 md:bg-transparent xl:pr-64"
+            >
+              <h1 class="text-2xl font-bold text-white">Lorem, ipsum.</h1>
+              <p class="text-sm text-white">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aspernatur inventore, est dicta beatae, incidunt a voluptas
+                consequuntur commodi, rem aut natus! Deleniti pariatur sint
+                dolorem eum numquam, ad expedita eius vero similique cupiditate
+                molestias tempore modi perferendis consequatur aut voluptatem.
+              </p>
+            </div>
+          </a>
+          <!-- More News 4 -->
+          <a
+            href="#"
+            class="relative flex w-full items-center rounded-3xl bg-white bg-opacity-10 md:space-x-3 md:p-3"
+          >
+            <img
+              src="img/news/1_4.png"
+              class="absolute -z-10 h-full w-full rounded-3xl object-cover md:static md:w-1/3"
+              alt=""
+            />
+            <div
+              class="flex flex-col space-y-6 rounded-2xl bg-black bg-opacity-80 p-6 md:bg-transparent xl:pr-64"
+            >
+              <h1 class="text-2xl font-bold text-white">Lorem, ipsum.</h1>
+              <p class="text-sm text-white">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aspernatur inventore, est dicta beatae, incidunt a voluptas
+                consequuntur commodi, rem aut natus! Deleniti pariatur sint
+                dolorem eum numquam, ad expedita eius vero similique cupiditate
+                molestias tempore modi perferendis consequatur aut voluptatem.
+              </p>
+            </div>
+          </a>
+          <!-- More News 5 -->
+          <a
+            href="#"
+            class="relative flex w-full items-center rounded-3xl bg-white bg-opacity-10 md:space-x-3 md:p-3"
+          >
+            <img
+              src="img/news/1_5.png"
+              class="absolute -z-10 h-full w-full rounded-3xl object-cover md:static md:w-1/3"
+              alt=""
+            />
+            <div
+              class="flex flex-col space-y-6 rounded-2xl bg-black bg-opacity-80 p-6 md:bg-transparent xl:pr-64"
+            >
+              <h1 class="text-2xl font-bold text-white">Lorem, ipsum.</h1>
+              <p class="text-sm text-white">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aspernatur inventore, est dicta beatae, incidunt a voluptas
+                consequuntur commodi, rem aut natus! Deleniti pariatur sint
+                dolorem eum numquam, ad expedita eius vero similique cupiditate
+                molestias tempore modi perferendis consequatur aut voluptatem.
+              </p>
+            </div>
+          </a>
+          <!-- More News 6 -->
+          <a
+            href="#"
+            class="relative flex w-full items-center rounded-3xl bg-white bg-opacity-10 md:space-x-3 md:p-3"
+          >
+            <img
+              src="img/news/1_6.png"
+              class="absolute -z-10 h-full w-full rounded-3xl object-cover md:static md:w-1/3"
+              alt=""
+            />
+            <div
+              class="flex flex-col space-y-6 rounded-2xl bg-black bg-opacity-80 p-6 md:bg-transparent xl:pr-64"
+            >
+              <h1 class="text-2xl font-bold text-white">Lorem, ipsum.</h1>
+              <p class="text-sm text-white">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aspernatur inventore, est dicta beatae, incidunt a voluptas
+                consequuntur commodi, rem aut natus! Deleniti pariatur sint
+                dolorem eum numquam, ad expedita eius vero similique cupiditate
+                molestias tempore modi perferendis consequatur aut voluptatem.
+              </p>
+            </div>
+          </a>
+          <!-- More News 7 -->
+          <a
+            href="#"
+            class="relative flex w-full items-center rounded-3xl bg-white bg-opacity-10 md:space-x-3 md:p-3"
+          >
+            <img
+              src="img/news/1_7.png"
+              class="absolute -z-10 h-full w-full rounded-3xl object-cover md:static md:w-1/3"
+              alt=""
+            />
+            <div
+              class="flex flex-col space-y-6 rounded-2xl bg-black bg-opacity-80 p-6 md:bg-transparent xl:pr-64"
+            >
+              <h1 class="text-2xl font-bold text-white">Lorem, ipsum.</h1>
+              <p class="text-sm text-white">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aspernatur inventore, est dicta beatae, incidunt a voluptas
+                consequuntur commodi, rem aut natus! Deleniti pariatur sint
+                dolorem eum numquam, ad expedita eius vero similique cupiditate
+                molestias tempore modi perferendis consequatur aut voluptatem.
+              </p>
+            </div>
+          </a>
+          <!-- More News 8 -->
+          <a
+            href="#"
+            class="relative flex w-full items-center rounded-3xl bg-white bg-opacity-10 md:space-x-3 md:p-3"
+          >
+            <img
+              src="img/news/1_8.png"
+              class="absolute -z-10 h-full w-full rounded-3xl object-cover md:static md:w-1/3"
+              alt=""
+            />
+            <div
+              class="flex flex-col space-y-6 rounded-2xl bg-black bg-opacity-80 p-6 md:bg-transparent xl:pr-64"
+            >
+              <h1 class="text-2xl font-bold text-white">Lorem, ipsum.</h1>
+              <p class="text-sm text-white">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aspernatur inventore, est dicta beatae, incidunt a voluptas
+                consequuntur commodi, rem aut natus! Deleniti pariatur sint
+                dolorem eum numquam, ad expedita eius vero similique cupiditate
+                molestias tempore modi perferendis consequatur aut voluptatem.
+              </p>
+            </div>
+          </a>
+          <!-- More News 1 -->
+          <a
+            href="#"
+            class="relative flex w-full items-center rounded-3xl bg-white bg-opacity-10 md:space-x-3 md:p-3"
+          >
+            <img
+              src="img/news/1_1.png"
+              class="absolute -z-10 h-full w-full rounded-3xl object-cover md:static md:w-1/3"
+              alt=""
+            />
+            <div
+              class="flex flex-col space-y-6 rounded-2xl bg-black bg-opacity-80 p-6 md:bg-transparent xl:pr-64"
+            >
+              <h1 class="text-2xl font-bold text-white">Lorem, ipsum.</h1>
+              <p class="text-sm text-white">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aspernatur inventore, est dicta beatae, incidunt a voluptas
+                consequuntur commodi, rem aut natus! Deleniti pariatur sint
+                dolorem eum numquam, ad expedita eius vero similique cupiditate
+                molestias tempore modi perferendis consequatur aut voluptatem.
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <!-- Pagination -->
+        <div class="flex items-center justify-center space-x-3 py-6">
+          <a
+            href="#"
+            class="flex items-center space-x-3 rounded-full p-2 font-bold text-white text-opacity-70"
+          >
+            < Prev
+          </a>
+          <a
+            href="#"
+            class="flex h-10 w-10 items-center justify-center space-x-3 rounded-full bg-[#FF89AD] bg-opacity-60 p-2 font-bold text-white text-opacity-70"
+          >
+            1
+          </a>
+          <a
+            href="#"
+            class="flex h-10 w-10 items-center justify-center space-x-3 rounded-full bg-[#FF89AD] bg-opacity-30 p-2 font-bold text-white text-opacity-70"
+          >
+            2
+          </a>
+          <a
+            href="#"
+            class="flex h-10 w-10 items-center justify-center space-x-3 rounded-full bg-[#FF89AD] bg-opacity-30 p-2 font-bold text-white text-opacity-70"
+          >
+            3
+          </a>
+          <a
+            href="#"
+            class="flex h-10 w-10 items-center justify-center space-x-3 rounded-full bg-[#FF89AD] bg-opacity-30 p-2 font-bold text-white text-opacity-70"
+          >
+            4
+          </a>
+          <a
+            href="#"
+            class="flex h-10 w-10 items-center justify-center space-x-3 rounded-full p-2 font-bold text-white text-opacity-70"
+          >
+            ...
+          </a>
+          <a
+            href="#"
+            class="flex h-10 w-10 items-center justify-center space-x-3 rounded-full bg-[#FF89AD] bg-opacity-30 p-2 font-bold text-white text-opacity-70"
+          >
+            11
+          </a>
+          <a
+            href="#"
+            class="flex items-center space-x-3 rounded-full p-2 font-bold text-white text-opacity-70"
+          >
+            Next >
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="py-6">
+      <div class="container mx-auto flex flex-col lg:flex-row">
+        <!-- Left  -->
+        <div
+          class="container flex flex-col items-center justify-center space-y-6 lg:w-1/2 lg:items-start lg:px-12"
+        >
+          <h3 class="text-sm font-black text-white">Stay in the loop</h3>
+          <p class="text-xs text-white">
+            Join our mailing list to stay in the loop with our newest feature
+            releases, NFT drops, and tips and tricks for navigating Metamation.
+          </p>
+
+          <form class="flex w-full flex-col items-center space-y-3">
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter your email"
+              class="w-full rounded-2xl border-2 border-gray-300 p-3 focus:outline-none"
+            />
+            <button
+              type="submit"
+              class="w-full rounded-full border-2 p-1 px-3 text-center font-bold text-white"
+            >
+              Subscribe
+            </button>
+          </form>
+
+          <div class="flex w-full flex-col space-y-6">
+            <h3 class="text-sm font-black text-white">Metamation</h3>
+            <div class="flex flex-row space-x-6">
+              <img src="img/Logo.png" class="h-16 w-16" alt="" />
+              <p class="text-sm text-white">
+                The world’s first and largest digital marketplace for crypto
+                collectibles and non-fungible tokens (NFTs). Buy, sell, and
+                discover exclusive digital items.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right -->
+        <div class="hidden w-1/2 flex-row justify-end space-x-6 px-12 lg:flex">
+          <div class="flex flex-col space-y-3 text-sm text-white">
+            <h3 class="mb-3 text-lg font-black">Marketplace</h3>
+            <a href="#">All</a>
+            <a href="#">Abstract</a>
+            <a href="#">Avatar</a>
+            <a href="#">Collectibles</a>
+            <a href="#">Design Art</a>
+            <a href="#">Games</a>
+            <a href="#">Money</a>
+            <a href="#">Sports</a>
+          </div>
+
+          <div class="flex flex-col space-y-3 text-sm text-white">
+            <h3 class="mb-3 text-lg font-black">My Account</h3>
+            <a href="#">Profile</a>
+            <a href="#">Favorites</a>
+            <a href="#">Watchlist</a>
+            <a href="#">My Collections</a>
+            <a href="#">Settings</a>
+          </div>
+
+          <div class="flex flex-col space-y-3 text-sm text-white">
+            <h3 class="mb-3 text-lg font-black">Company</h3>
+            <a href="#">About</a>
+            <a href="#">Careers</a>
+            <a href="#">Ventures</a>
+            <a href="#">Grants</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="container mx-auto mt-6 border-t-2">
+        <p class="mt-3 text-center text-white">
+          Copyright ©2022 <a href="#" class="text-[#FF5C8D]">Metamation</a>. All
+          rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/homepage_navbar.js"></script>
+  </body>
+</html>
